@@ -1,0 +1,83 @@
+- Parte privada
+    - Escolha de tema
+    - Escolha de linguagem
+    - Gestão de fonte
+        - Aumentar tamanho
+        - Escolher fonte (?)
+    - Gestão de Menus
+        - Validar contrato do utilizador
+            - Ver quais as funcionalidades no pacote associado ao contrato
+        - Possiiblidade do utilizador gerir os menus (esconder/mostrar/ordernar)
+            - Da navbar
+            - Do agrupador
+                - Possiibilidade de agrupar sub-menus a um menu (funcionalidade - sub-funcionalidade)
+    - Possibilidade de escolher os widgets da dashboard (dreaming alive)
+- Backoffice
+    - Resources
+        - Gestão de resources por ficheiro
+        - Posibilidade de criar/editar resources no ficheiro a partir do backoffice
+        - Api para obter os resources (cachar do lado do mw e do fe)
+        - Metodos de MW e FE para obter o resource por Modulo e Key
+    - Conteudos
+        - Gestão de conteudos (imagens e disclaimers)
+        - Apis para obter conteudos
+        - Criação de perfil para gestao de conteudos
+            - Perfil para criação e edição com auto aprovação
+            - Perfil para criação e edição com necessidade de workflow de aprovação - Workflow de aprovação (Perfil Super Admin)
+    - Gestao de Roles
+        - Gestão de roles (criar, editar, apagar)
+        - Gestão de perfis (criar, editar, apagar)
+        - Gestão de funcionalidades (criar, editar, apagar)
+        - Associação entre roles e perfis
+        - Associação entre funcionalides e role-perfil
+    - Gestão de menus
+        - Associar com Role
+        - Possibilidade de desativar uma funcionalidade da aplicação privada - para todos os utilizadores registados na plataforma/novos utilizadores
+    - Recuperar contacto do utilizador
+        - Tabela com os campos necessarios para serem fornecidos e validados de forma a fornecer o contacto
+    - Recuperar username
+        - Tabela com os campos necessarios para serem fornecidos e validados de forma a fornecer o username
+        - Envio do username pelo contacto à escolha do user
+    - Recuperar password
+        - Tabela com os campos necessarios para serem fornecidos e validados de forma a fornecer a password
+        - Envio da nova password para o user, pelo contacto à escolha do user
+        - Obrigatoriedade de trocar a password (criação de setting para criar a regra ou nao?)
+- Autenticação
+    - Tabela com tipos de autenticação disponiveis
+        - Por username ou email
+            - Tabela de configs com configuração a dizer se usa o username ou email ou aceita ambos
+        - Por email (google autenticator
+        
+        ---
+        
+    - Possibilidade de criar utilizador a plataforma publica
+    - Possibilidade de criar um utilizador a partir do backoffice
+    - Possibilidade de gerir o utilizador a partir do backoffice (update/desativar/gerir informações)
+        - Primeiro Nome
+        - Ultimo Nome
+        - Contactos
+        - Data nascimento
+        - Lista de campos dinamica com chave (tbl_UserInformationFields - tbl_UserInformationFieldTypes)
+            - tbl_UserInformationFieldTypes - Moradas, Informaçoes Fiscais, Agregado Familiar
+            - tbl_UserInformationFields - Moradas(Rua, numero, codigo postal, etc)
+    - Possibilidade de auto-gerir o perfil na parte privada (gerir informações)
+        - Primeiro Nome
+        - Ultimo Nome
+        - Foto Perfil
+        - Contactos
+        - Data nascimento
+        - Lista de campos dinamica com chave (tbl_UserInformationFields - tbl_UserInformationFieldTypes)
+            - tbl_UserInformationFieldTypes - Moradas, Informaçoes Fiscais, Agregado Familiar
+            - tbl_UserInformationFields - Moradas(Rua, numero, codigo postal, etc)
+    - Recuperar username
+        - Tabela com os campos necessarios para serem fornecidos e validados de forma a fornecer o username
+        - Envio do username pelo contacto à escolha do user
+    - Recuperar password
+        - Tabela com os campos necessarios para serem fornecidos e validados de forma a fornecer a password
+        - Envio da nova password para o user, pelo contacto à escolha do user
+        - Obrigatoriedade de trocar a password (criação de setting para criar a regra ou nao?)
+        - Recuperar password por contacto (email/telefone)
+        - Recuperar username por contacto (email/telefone)
+    - Multiplo nivel de autenticação
+        - Password
+        - Password + OTP
